@@ -49,7 +49,7 @@ let pages = null;
     })
 
 
-    autoScroll(tab);
+    //autoScroll(tab);
 
     await new Promise(function(resolve, reject){
         setTimeout(function() {
