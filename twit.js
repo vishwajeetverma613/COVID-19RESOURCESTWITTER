@@ -9,13 +9,8 @@ let pages = null;
 (async () => {
     browser = await puppeteer.launch({ headless: false,
         defaultViewport: null,
-        args: ["--start-maximized",'--disable-dev-shm-usage','--enable-features=NetworkService',
-        '--no-sandbox',
-        '--disable-setuid-sandbox',
-        '--disable-dev-shm-usage',
-        '--disable-web-security',
-        '--disable-features=IsolateOrigins,site-per-process',
-        '--shm-size=3gb', // this solves the issue
+        args: ["--start-maximized"
+         // this solves the issue
     ]});
         
     pages = await browser.pages();
